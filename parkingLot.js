@@ -87,7 +87,8 @@ module.exports = {
     createParkingLot,
     park,
     status,
-    leave
+    leave,
+    Cars
 }
 
 

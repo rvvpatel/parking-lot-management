@@ -43,7 +43,7 @@ let initApp = () => {
             }
         }
         else {
-            console.log('Command is not valid , please note predeifed commands are case sensitive and matched as per the description!');
+            console.log('Command is not valid , please predeifed readme file for commands');
         }
     });
 }
