@@ -1,0 +1,22 @@
+{
+  "name": "parking-lot-management",
+  "version": "1.0.0",
+  "description": "parking lot management ",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rvvpatel/parking-lot-management.git"
+  },
+  "keywords": [
+    "parking"
+  ],
+  "author": "ravi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rvvpatel/parking-lot-management/issues"
+  },
+  "homepage": "https://github.com/rvvpatel/parking-lot-management#readme"
+}
