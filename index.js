@@ -24,6 +24,14 @@ let initApp = () => {
                 console.log(`error ${e}`)
             }
         }
+        else if (input[0] === 'leave') {
+            try {
+                const result = parkingLot.leave(input[1], input[2]);
+                console.log(result)
+            } catch (e) {
+                console.log(`error ${e}`)
+            }
+        }
         else if (input[0] === 'status') {
             try {
                 const result = parkingLot.status();
