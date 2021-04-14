@@ -33,9 +33,25 @@ let park = (carNo) => {
     }
 }
 
+let status = () => {
+    if (maxSize === 0) {
+        return "parking lot is not initiated";
+    } else if (Cars.length > 0) {
+        Cars.sort((a, b) => (a.slot) - (b.slot));
+        console.log("Slot No.\t Car No.")
+        Cars.map(item => {
+            console.log(item.slot + '\t    ' + item.carNo)
+        })
+    }
+    else {
+        return 'Parking lot empty'
+    }
+}
+
 module.exports = {
     createParkingLot,
-    park
+    park,
+    status
 }
 
 

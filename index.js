@@ -13,13 +13,23 @@ let initApp = () => {
                 const result = await parkingLot.createParkingLot(input[1]);
                 console.log(result);
             } catch (e) {
-               console.log(`error ${e}`)
+                console.log(`error ${e}`)
             }
         }
         else if (input[0] === 'park') {
             try {
                 const result = parkingLot.park(input[1]);
                 console.log(result)
+            } catch (e) {
+                console.log(`error ${e}`)
+            }
+        }
+        else if (input[0] === 'status') {
+            try {
+                const result = parkingLot.status();
+                if (result) {
+                    console.log(result)
+                }
             } catch (e) {
                 console.log(`error ${e}`)
             }
